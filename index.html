@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zozan Çay Evi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f5f0eb;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background-color: #1c1c1c;
+      color: #f5f5f5;
       scroll-behavior: smooth;
     }
     header {
@@ -23,34 +24,43 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      backdrop-filter: brightness(0.6);
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 2px 2px 10px #000;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #ddd;
     }
     nav {
-      background-color: #b04632;
-      padding: 10px;
+      background-color: #8d3829;
+      padding: 15px;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 40px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
     h2 {
       text-align: center;
-      color: #b04632;
+      color: #f4c04d;
+      font-family: 'Playfair Display', serif;
       margin-bottom: 30px;
     }
     .gallery {
@@ -60,8 +70,12 @@
     }
     .gallery img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
     }
     iframe {
       width: 100%;
@@ -70,10 +84,11 @@
       border-radius: 10px;
     }
     footer {
-      background-color: #b04632;
-      color: white;
+      background-color: #111;
+      color: #aaa;
       text-align: center;
-      padding: 20px;
+      padding: 30px 10px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -92,7 +107,7 @@
 
 <section id="hakkinda">
   <h2>Hakkımızda</h2>
-  <p>Zozan Çay Evi, Diyarbakır Yenişehir’in kalbinde yer alan sıcak ve samimi bir mekândır. Geleneksel Anadolu misafirperverliğiyle hazırlanmış ortamında, dostlarınızla keyifli sohbetler eşliğinde demli çayın tadına varabilirsiniz. Burada zaman yavaş akar, çayın buğusunda huzur saklıdır.</p>
+  <p>Zozan Çay Evi, Mezopotamya’nın kalbinde yer alan sıcak ve samimi bir mekândır. Geleneksel misafirperverliğiyle hazırlanmış ortamında, dostlarınızla keyifli sohbetler eşliğinde demli çayın tadına varabilirsiniz. Burada zaman yavaş akar, çayın buğusunda huzur saklıdır.</p>
 </section>
 
 <section id="galeri">
@@ -113,7 +128,7 @@
 </section>
 
 <footer>
-  © 2025 Zozan Çay Evi — Tüm hakları saklıdır.
+  © 2025 Zozan Çay Evi — Mezopotamya’dan sevgilerle.
 </footer>
 
 </body>
